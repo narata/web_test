@@ -8,7 +8,12 @@
         <servlet-name>test</servlet-name>
         <servlet-class>com.servlet.MyServlet</servlet-class>
     </servlet>
-    
+    <servlet>
+        <servlet-name>BServlet</servlet-name>
+        <servlet-class>com.servlet.BServlet</servlet-class>
+    </servlet>
+
+
     <servlet-mapping>
         <servlet-name>test</servlet-name>
         <url-pattern>/test</url-pattern>
