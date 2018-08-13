@@ -1,4 +1,4 @@
-package junit;
+package com.junit;
 
 public class TestAdd {
     public int testAdd(int a, int b) {

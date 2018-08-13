@@ -11,19 +11,19 @@
 
     <tag>
         <name>tag1</name>
-        <tag-class>tag.Tag1</tag-class>
+        <tag-class>com.tag.Tag1</tag-class>
         <body-content>empty</body-content>
     </tag>
 
     <tag>
         <name>tag2</name>
-        <tag-class>tag.Tag2</tag-class>
+        <tag-class>com.tag.Tag2</tag-class>
         <body-content>scriptless</body-content>
     </tag>
 
     <tag>
         <name>tag3</name>
-        <tag-class>tag.Tag3</tag-class>
+        <tag-class>com.tag.Tag3</tag-class>
         <body-content>scriptless</body-content>
         <attribute>
             <name>test</name>

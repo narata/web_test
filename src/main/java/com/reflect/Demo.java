@@ -1,4 +1,4 @@
-package reflect;
+package com.reflect;
 
 public class Demo {
 

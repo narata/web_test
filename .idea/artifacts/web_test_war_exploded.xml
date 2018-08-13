@@ -7,6 +7,10 @@
         <element id="directory" name="classes">
           <element id="module-output" name="web_test" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.2" />
+          <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
+        </element>
       </element>
     </root>
   </artifact>

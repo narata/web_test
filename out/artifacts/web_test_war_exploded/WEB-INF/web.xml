@@ -8,10 +8,16 @@
         <servlet-name>test</servlet-name>
         <servlet-class>com.servlet.MyServlet</servlet-class>
     </servlet>
+
     <servlet>
-        <servlet-name>BServlet</servlet-name>
-        <servlet-class>com.servlet.BServlet</servlet-class>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>helloworld.com.web.servlet.UserServlet</servlet-class>
     </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/UserServlet</url-pattern>
+    </servlet-mapping>
 
 
     <servlet-mapping>

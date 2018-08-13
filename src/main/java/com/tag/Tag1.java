@@ -1,4 +1,4 @@
-package tag;
+package com.tag;
 
 import javax.servlet.jsp.JspContext;
 import javax.servlet.jsp.JspException;
