@@ -12,6 +12,11 @@
     <title>$Title$</title>
 </head>
 <body>
-<a href="<c:url value='/UserServlet'/>">点击这里</a>
+<h1>欢迎你啊！</h1>
+<%--<a href="<c:url value='/UserServlet'/>">点击这里</a>--%>
+<%--<%--%>
+    <%--application.setAttribute("xxx", "XXX");--%>
+    <%--application.setAttribute("xxx", "YYY");--%>
+<%--%>--%>
 </body>
 </html>

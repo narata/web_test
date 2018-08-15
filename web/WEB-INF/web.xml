@@ -3,26 +3,86 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-    
+    <context-param>
+        <param-name>javax.faces.CONFIG_FILES</param-name>
+        <param-value>/faces-config.xml</param-value>
+    </context-param>
+    <filter>
+        <filter-name>AFilter</filter-name>
+        <filter-class>com.filter.AFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AFilter</filter-name>
+        <servlet-name>CServlet</servlet-name>
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
+
     <servlet>
         <servlet-name>test</servlet-name>
         <servlet-class>com.servlet.MyServlet</servlet-class>
     </servlet>
-
     <servlet>
         <servlet-name>UserServlet</servlet-name>
         <servlet-class>helloworld.com.web.servlet.UserServlet</servlet-class>
     </servlet>
-
-    <servlet-mapping>
-        <servlet-name>UserServlet</servlet-name>
-        <url-pattern>/UserServlet</url-pattern>
-    </servlet-mapping>
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>user.web.servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>user.web.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Faces Servlet</servlet-name>
+        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet>
+        <servlet-name>CServlet</servlet-name>
+        <servlet-class>com.servlet.CServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Upload1Servlet</servlet-name>
+        <servlet-class>com.upload.Upload1Servlet</servlet-class>
+    </servlet>
 
 
     <servlet-mapping>
         <servlet-name>test</servlet-name>
         <url-pattern>/test</url-pattern>
     </servlet-mapping>
-    
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/UserServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>*.xhtml</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CServlet</servlet-name>
+        <url-pattern>/cservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Upload1Servlet</servlet-name>
+        <url-pattern>/Upload1Servlet</url-pattern>
+    </servlet-mapping>
+
+
+    <listener>
+        <listener-class>com.listener.AListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>com.listener.BListener</listener-class>
+    </listener>
+
 </web-app>
